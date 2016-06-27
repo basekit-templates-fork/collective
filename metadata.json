@@ -25,7 +25,7 @@
         }
     },
     "fontSwatch": {
-       "title": "Vollkorn, Istok",
+       "title": "Titillium Web, Lato",
         "font1": {
             "font-family": "\"Titillium Web\", Geneva, Tahoma, sans-serif",
             "font-size": "36px",
@@ -208,7 +208,7 @@
             "color__twitter-tweet--text": "@color__p--text"
         },
         "socialicons": {
-            "color__socialicons--icon": "@color-swatch3",
+            "color__socialicons--icon": "lighten(@color__p--text, 10%)",
             "color__socialicons--icon--background": "transparent"
         },
         "blog": {

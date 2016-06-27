@@ -596,10 +596,6 @@
     margin-right: 3px;
     text-align: center;
     background-color: @color__socialicons--icon--background;
-    border: 1px solid darken(@color__body--background, 15%);
-    &:hover {
-        border: 1px solid @color-swatch3;
-    }
     .social-link {
         display: inline-block;
         padding: 2px 8px 6px;
@@ -612,13 +608,34 @@
         &:hover {
             text-decoration: none;
         }
+        &:hover:before {
+            color: @color-swatch3;
+        }
     }
     .social-name {
         display: none;
     }
 }
 
+.social-item:first-child {
+    .social-link {
+        padding: 2px 8px 6px 0;
+    }
+}
 
+.social-item:last-child {
+    .social-link {
+        padding: 2px 0 6px 8px;
+    }
+}
+
+.flex-profile2 .social-item {
+    margin-right: 0;
+    text-align: right;
+    @media @tablet {
+        text-align: center;
+    }
+}
 
 
 // -----------------------------
@@ -655,9 +672,11 @@
         font-size: bkscale(@font__p--font-size,0.9);
         line-height: bkscale(@font__p--line-height,0.9);
         padding-bottom: 0;
+        color: lighten(@color__p--text, 10%);
     }
-    h1, h2, h3, h4, p {
-        color: @color__p--text;
+    a:hover {
+        color: @color-swatch3;
+        text-decoration: none;
     }
     .legend {
         font-size: bkscale(@font__p--font-size,0.9);
