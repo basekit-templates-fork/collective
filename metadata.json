@@ -2,7 +2,7 @@
     "name": "collective",
     "widgetVersion":2,
     "thumbnail": "thumbnail.png",
-    "screenshot": "screenshot.jpg",
+    "screenshot": "template-screenshot.jpg",
     "templateType":"standard",
     "pageTypes": ["home", "blogpost"],
     "images":[
