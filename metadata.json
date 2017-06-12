@@ -4,7 +4,7 @@
     "thumbnail": "thumbnail.png",
     "screenshot": "collective-screenshot.jpg",
     "templateType":"standard",
-    "pageTypes": ["home", "blogpost"],
+    "pageTypes": ["home"],
     "images":[
         "images/gallery/img1.jpg",
         "images/gallery/img2.jpg",
