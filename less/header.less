@@ -6,7 +6,8 @@
     min-height: 45px;
     margin: 0 auto;
     @media @tablet {
-        padding-right: 50px;
+        padding-right: 40px;
+        max-width: 100%;
     }
 }
 
@@ -196,6 +197,10 @@
         margin: 10px 5px 10px 0;
         .logo-image {
             max-width: 350px;
+
+            @media @tablet {
+                max-width: 100%;
+            }
         }
     }
 }
