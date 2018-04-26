@@ -364,6 +364,7 @@
         font-weight: @font__navigation--font-weight;
         line-height: @font__navigation--line-height;
         letter-spacing: @font__navigation--letter-spacing;
+        padding: 14px 14px 0;
         &:hover {
             color: @color__navigation--text--hover;
             .transition( all, 0.5s, ease );
@@ -380,9 +381,6 @@
     @media only screen and (min-width: 769px) {
         .navigation-item:first-child .item-name {
             padding-left: 0;
-        }
-        .navigation-item:last-child .item-name {
-            padding-right: 0;
         }
         .navigation-list--children {
             .navigation-item:first-child .item-name,
