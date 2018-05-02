@@ -6,7 +6,8 @@
     min-height: 45px;
     margin: 0 auto;
     @media @tablet {
-        padding-right: 50px;
+        padding-right: 40px;
+        max-width: 100%;
     }
 }
 
@@ -93,8 +94,7 @@
         .logo-image {
             margin: 5px 0;
             @media @tablet {
-                max-height: 125px;
-                width: auto !important;
+                max-width: 350px;
             }
         }
         @media @tablet {
@@ -179,7 +179,7 @@
 .template-default {
     .template-header-container {
         .flex-display;
-        .flex-wrap(wrap);
+        .flex-wrap(nowrap);
         .justify-content(space-between);
         .align-items(center);
         .align-content(space-between);
@@ -196,8 +196,11 @@
     .logo {
         margin: 10px 5px 10px 0;
         .logo-image {
-            max-height: 125px;
-            width: auto !important;
+            max-width: 350px;
+
+            @media @tablet {
+                max-width: 100%;
+            }
         }
     }
 }
