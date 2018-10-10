@@ -84,7 +84,6 @@ select,
         line-height: 1em;
         text-align: center;
         font-size: 14px;
-        color: @color-swatch3;
         position: absolute;
         right: 0;
         top: 50%;
@@ -99,9 +98,8 @@ select {
     width: 100%;
     padding: 0 10px 0 0;
     border-bottom: none;
-    color: @color-swatch3;
     font-family: @font__p--font-family;
-    font-size: 14px;
+    font-size: @font__p--font-size;
     font-weight: @font__p--font-weight;
     line-height: @font__p--line-height;
     letter-spacing: @font__p--letter-spacing;
@@ -109,6 +107,10 @@ select {
         -moz-appearance: none;
         text-indent: 0.01px;
         text-overflow: '';
+}
+
+select:not(.advancedcontactform__select) {
+    font-size: 14px;
 }
 
 // Hides arrow in IE
