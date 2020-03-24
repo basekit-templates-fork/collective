@@ -18,7 +18,6 @@
 
 @import "@{templateCommon}/bk-less-framework-v8.less"; // BaseKit LESS Framework
 
-// @import "@{templateLocal}/bk-v8-test.less";
 
 // Template Includes
 @import "@{templateLocal}/less/forms.less"; // Forms global styles
@@ -132,7 +131,7 @@ p {
 // -----------------------------
 
 .container #page-zones__main {
-    > .widget:not(:not[data-name="row"]) {
+    > .widget:not([data-name="row"]) {
         display: inline-block;
         width: 90%;
         margin: 50px 5% 0;
@@ -147,7 +146,6 @@ p {
     }
     [data-name="image"] {
         width: 100%;
-        // margin: 0 auto;
     }
     .responsivecolumns {
         .widget {
