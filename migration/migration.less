@@ -20,6 +20,10 @@
   }
 }
 
+[data-name="row"] .select-wrap:after {
+  right: 8px;
+}
+
 
 // Migration styles
 // -----------------------------
@@ -37,7 +41,7 @@
 .container #page-zones__main > .widget:not([data-name="row"]):not([data-name="image"]),
 .empty-zone,
 #page-zones__main:empty,
-[data-name="row"]:not(.row--width-no-padding) .row__container {
+.row:not(.row--width-no-padding) .row__container {
   margin-left: auto;
   margin-right: auto;
   max-width: @container-width;
